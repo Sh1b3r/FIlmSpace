@@ -1,33 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #ffffff;
-  background-color: #000000;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #e0e0e0;
 }
 
 .body2 {
-  background-color: rgb(46, 51, 49);
+  width: 100%;
+  height: 2000px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
   margin: 250px 100px 100px 100px;
-  padding: 100px 100px 100px 100px;
-  border: 2px solid rgb(46, 51, 49);
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .body2 h1 {
   text-align: center;
-  color: #3a0eb3;
-  font-size: 100px;
+  color: #ffffff;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(13, 228, 238, 0.5);
 }
 
-.register-content {
-  font-size: 30px;
+.body2 .input-group {
+  position: relative;
+  margin-bottom: 35px;
+  margin-top: 40px;
+}
+
+.body2 .input-group input {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 1.5em;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.body2 .input-group label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 1.5em;
+}
+
+.body2 .input-group input:focus + label,
+.body2 .input-group input:valid + label {
+  top: -15px;
+  font-size: 1.5em;
+  color: #0de4ee;
+}
+
+.body2 .submit-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid rgba(13, 228, 238, 0.5);
+  border-radius: 10px;
+  background: transparent;
+  color: #0de4ee;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  letter-spacing: 1px;
+}
+
+.body2 .submit-btn:hover {
+  background: linear-gradient(45deg, #0de4ee, #209cff);
+  color: #1a1a2e;
+  box-shadow: 0 0 25px rgba(13, 228, 238, 0.7);
+  transform: translateY(-3px);
+}
+
+.body2 .checkbox-group {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.body2 .checkbox-group input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.body2 .login-link {
   text-align: center;
+  margin-top: 20px;
+  color: #b0b0b0;
 }
 
-.register-content input:focus ~ label,
-.register-content input:not(:placeholder-shown) ~ label {
-  top: -0.6rem;
-  font-size: 0.75rem;
-  /* ... more styles */
+.body2 a {
+  color: #209cff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.body2 a:hover {
+  color: #0de4ee;
+  text-decoration: underline;
+}
+
+.body3 {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 50px;
+}
+
+select {
+  font-size: 0.7em;
+  color: #b0b0b0;
+   background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+   backdrop-filter: blur(10px);
 }
 
 * {

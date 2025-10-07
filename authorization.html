@@ -2,10 +2,13 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Авторизація</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmSpace Authorization</title>
     <link rel="stylesheet" href="authorization.css">
-     <link rel="icon" href="FilmSpaceLogo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+     <link rel="icon" href="photo_5395866336107822839_w.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="stars"></div>
@@ -15,29 +18,29 @@
     <div class="shooting-star"></div>
     <div class="shooting-star"></div>
     <div class="body2">
+    <div  class="body3">
         <h1>Авторизація</h1>
     <div class="register-content">
         <p>Будь ласка, заповніть форму нижче, щоб увійти до свого облікового запису.</p>
     <div class="register-form">
         <form action="register.html" method="post">
-        <div class="name">
-            <label for="username">Ім'я користувача:</label>
-        <input type="text" id="username" name="username" required>
-</div>
-        <div class="email">
-        <label for="email">Електронна пошта:</label>
-        <input type="email" id="email" name="email" required>
-</div>
-        <div class="password">
-            <label for="password">Пароль:</label>
-            <input type="password" id="password" name="password" required>
+        <div class="input-group">
+            <input type="text" id="username" name="username" required placeholder=" ">
+            <label for="username">Ім'я користувача</label>
         </div>
-        <div class="confirm-password">
-            <label for="confirm-password">Підтвердіть пароль:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
+        <div class="input-group">
+            <input type="email" id="email" name="email" required placeholder=" ">
+            <label for="email">Електронна пошта</label>
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" name="password" required placeholder=" ">
+            <label for="password">Пароль</label>
+        </div>
+        <div class="input-group">
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder=" ">
+            <label for="confirm-password">Підтвердження пароля</label>
         </div>
     </div>
-    
     <div class="age">
         <label for="age">Вік:</label>
         <div class="day">
@@ -170,16 +173,14 @@
             </select>
         </div>
     </div>
-        <label for ="terms">
+        <div class="input-group checkbox-group">
             <input type="checkbox" id="terms" name="terms" required>
-            Я погоджуюсь з <a href="terms.html">умовами використання</a>
-        </label>
-        <div class="submit-button">
-        <button type="submit"><a href="FilmSpace.html">Зареєструватися</a></button>
-    </form>
+            <label for="terms">Я погоджуюсь з <a href="#">Умовами використання</a> </label>
+        </div>
+        <button type="submit" class="submit-btn">Зареєструватися</button>
     <p>Вже маєте обліковий запис? <a href="authorization2.html">Увійти</a></p>
     </div>
     </div>
-    </div>
+</div>
 </body>
 </html>
